@@ -15,3 +15,4 @@ app.get("/bacheca",(req,res)=>{
 app.listen(port, function(){
     console.log("il server è ascoltato dalla porta"+ port)
 })
+app.use(express.static("public"))
