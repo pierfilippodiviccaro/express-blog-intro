@@ -6,7 +6,7 @@ const app = express()
 const port = 8888
 
 app.get("/", (req,res)=>{
-res.send("miao")
+res.send("Benvenuti nella mia cucina")
 })
 app.get("/bacheca",(req,res)=>{
     res.json(articoli)
