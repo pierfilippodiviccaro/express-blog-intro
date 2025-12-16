@@ -1,0 +1,17 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "pierfilippo",
+  "type": "module",
+  "main": "articoli.js",
+  "scripts": {
+    "start": "node articoli.js",
+    "dev": "node --watch articoli.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "node": "^24.12.0"
+  }
+}
