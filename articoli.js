@@ -1,12 +1,17 @@
 import express from "express";
-import { articoli } from "./data.js";
+import  {articoli}  from "./data.js";
+import { log } from "console";
 
 const app = express()
-const port = 3000
+const port = 8888
 
 app.get("/", (req,res)=>{
 res.send("miao")
-    console.log("ciao dalla miao corporation");
-
 })
-app.get("/articoli")
+app.get("/bacheca",(req,res)=>{
+    res.json(articoli)
+})
+
+app.listen(port, function(){
+    console.log("il server è ascoltato dalla porta"+ port)
+})
